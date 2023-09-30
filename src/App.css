@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.menu {
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buy {
+    border-radius: 20px;
+    background-color: brown;
+    border: none;
+    padding: 0px 25px;
+    width: fit-content;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+    background-color: #222222;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.slider {
+    height: 700px;
+    width: calc(100% - 180px);
+    /* border: 1px solid white; */
+    /* border-radius: 20px; */
+    margin: auto 0;
+    /* box-shadow:
+    0 0 30px #fff,
+    -10px 0 20px blue,
+    10px 0 10px purple; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    font-size: 100px;
+    color: #a52a2a;
+    font-weight: 600;
+    transform: rotate(-10deg);
+    margin-bottom: 30px;
+}
+.description {
+    height: fit-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upText {
+    color: bisque;
+    font-size: 48px;
+    transform: rotate(-10deg);
+}
+.downText {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
